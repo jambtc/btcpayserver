@@ -530,6 +530,9 @@ namespace BTCPayServer.Hosting
             services.AddRateProvider<FreeCurrencyRatesRateProvider>();
             services.AddRateProvider<ExchangeRateHostRateProvider>();
 
+            // Swaggy exchange rate
+            services.AddRateProvider<SwaggyRateProvider>();
+
             // Broken
             // Providers.Add("argoneum", new ArgoneumRateProvider(_httpClientFactory?.CreateClient("EXCHANGE_ARGONEUM")));
 
